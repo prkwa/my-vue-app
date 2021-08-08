@@ -1,6 +1,7 @@
 <template>
   <div class="todolist">
     <div>Todoリスト</div>
+
     <div>
       <div v-for="(todo, index) in todos" v-bind:key="index" class="todo">
         <div class="todo__checkbox">
