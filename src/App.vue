@@ -6,12 +6,17 @@
         {{ message }}
       </div>
     </div>
+    <TodoList />
   </div>
 </template>
 
 <script>
+import TodoList from "@/components/TodoList.vue"
 export default {
   name: "App",
+  components: {
+    TodoList,
+  },
   data: function () {
     return {
       message: "WebExpert Course Vue Template",
@@ -20,7 +25,6 @@ export default {
   methods: {},
 }
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
